@@ -69,7 +69,8 @@ var template = `
         <hr/>
         </div>
         </body>
-        </html> `;
+        </html>
+        `;
     return template;     
 }
 
