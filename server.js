@@ -82,11 +82,11 @@ app.get('/ui/article-one', function (req, res){
 });
 
 app.get('/ui/article-two', function (req, res){
-  res.send(createTemp(articleOne));
+  res.send(createTemp(articleTwo));
 });
 
 app.get('/ui/article-', function (req, res){
-  res.send(createTemp(articleOne));
+  res.send(createTemp(articleThre));
 });
 
 app.get('/ui/style.css', function (req, res) {
