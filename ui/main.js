@@ -2,7 +2,7 @@ console.log('Loaded!');
 var marginLeft = 0;
 var img = document.getElementById('qwe');
 function moveRight (){
-    var marginLeft = marginLeft + 10;
+    var marginLeft = marginLeft + 100;
     img.style.marginLeft = marginLeft + 'px';
 }
 img.onclick = function (){
