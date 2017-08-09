@@ -5,8 +5,11 @@ body {
 }
 
 .look{
-    color: yellow;
-     background-color: lightgrey;
+    background-color: transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
 }
 .center {
     text-align: center;
