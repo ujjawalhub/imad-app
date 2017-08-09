@@ -78,7 +78,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ui/:articleOne', function (req, res){
-  res.send(createTemp(articleOne));
+  res.send(createTemp(articles[articleOne]));
 });
 
 app.get('/ui/article-two', function (req, res){
