@@ -5,7 +5,8 @@ body {
 }
 
 .look{
-    color: blue;
+    color: yellow;
+     background-color: black;
 }
 .center {
     text-align: center;
