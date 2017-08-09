@@ -82,13 +82,6 @@ app.get('/ui/:articleName', function (req, res){
   res.send(createTemp(articles[articleName]));
 });
 
-app.get('/ui/article-two', function (req, res){
-  res.send(createTemp(articleTwo));
-});
-
-app.get('/ui/article-three', function (req, res){
-  res.send(createTemp(articleThre));
-});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
