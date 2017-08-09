@@ -31,7 +31,7 @@ var articles = {
 </p> `
     },
     articleThre:  { 
-         tiltle: 'Article two | Ujajwal',
+         tiltle: 'Article Three | Ujajwal',
         date: '08 Aug',
         content: `  <p> this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
 
