@@ -5,13 +5,24 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content = {
+  title: 'Article one | Ujjawal',
+  date: '26 April',
+  content: ` this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
+
+          <p>  this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article </p>
+
+            <p>this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article </p>
+
+            this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
+`
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/article-one', function (req, res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
-});
+
 app.get('/ui/article-two', function (req, res){
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
