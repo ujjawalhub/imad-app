@@ -1,5 +1,5 @@
 console.log('Loaded!');
-
+var marginLeft = 0;
 var img = document.getElementById('qwe');
 function moveRight (){
     var marginLeft = marginLeft + 10;
