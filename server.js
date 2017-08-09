@@ -50,7 +50,6 @@ function createTemp (data){
 var template = `
         <html>
         <head>
-         <link href="/ui/style.css" rel="stylesheet" />
              <title> ${title}
             </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
