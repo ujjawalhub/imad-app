@@ -1,6 +1,10 @@
 console.log('Loaded!');
 
 var img = document.getElementById('qwe');
+function moveRight (){
+    var marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
+}
 img.onclick = function (){
-    img.style.height = '190px';
+    var interval = setInterval(moveRight , 100);
 };
