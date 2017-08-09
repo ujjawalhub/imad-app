@@ -62,7 +62,7 @@ var template = `
         <a href='/'>Home</a>
         </div>
         <div  class="center">
-         <img src="/ui/madi.png" class="img-medium"/>
+         <img src="/ui/web234.jpg" class="img-medium"/>
         </div>
         ${date}
         <hr/>
