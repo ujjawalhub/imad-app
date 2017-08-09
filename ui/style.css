@@ -4,6 +4,9 @@ body {
     margin-top: 75px;
 }
 
+.look{
+    color: blue;
+}
 .center {
     text-align: center;
 }
