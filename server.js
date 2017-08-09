@@ -18,29 +18,34 @@ var content = {
 </p> `
 };
 
-var template = `<html>
-    <head>
-        <title> ${title}
-        </title>
+function createTemp (data){
+    var title = data.title;
+    var date = data.date;
+    var content = data.content;
+var template = `
+        <html>
+        <head>
+             <title> ${title}
+            </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-         <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-    <div class="content">
+        <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <body>
+        <div class="content">
         <div  class="center">
-            <a href='/'>Home</a>
+        <a href='/'>Home</a>
         </div>
-       ${date}
+        ${date}
         <hr/>
-       
-           ${content}       
+        ${content}       
         <ol>
-          <h2>By - Ujjawal</h2>  
+        <h2>By - Ujjawal</h2>  
         </ol>
         <hr/>
         </div>
-    </body>
-</html> ` ;
+        </body>
+        </html> ` ;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
