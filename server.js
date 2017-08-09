@@ -47,7 +47,7 @@ function createTemp (data){
     var title = data.title;
     var date = data.date;
     var content = data.content;
-var tempLate = `
+var template = `
         <html>
         <head>
              <title> ${title}
@@ -71,7 +71,7 @@ var tempLate = `
         </body>
         </html>
         `;
-    return tempLate;     
+    return template;     
 }
 
 app.get('/', function (req, res) {
