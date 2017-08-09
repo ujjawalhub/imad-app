@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles = {
+    articleOne: {
   title: 'Article one | Ujjawal',
   date: '26 April',
   content: ` <p> this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
@@ -16,10 +17,31 @@ var articleOne = {
 
             this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
 </p> `
-};
+},
+    articleTwo: {
+        tiltle: 'Article two | Ujajwal',
+        date: '29 Sep',
+        content: ` <p> this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
 
-var articleTwo = {
-    
+          <p>  this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article </p>
+
+            <p>this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article </p>
+
+            this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
+</p> `
+    },
+    articleThre:  { 
+         tiltle: 'Article two | Ujajwal',
+        date: '29 Sep',
+        content: `  <p> this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
+
+          <p>  this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article </p>
+
+            <p>this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article </p>
+
+            this is my article this is my article this is my article this is my article this is my article this is my article this is my articlethis is my article
+</p>`
+    }
 };
 function createTemp (data){
     var title = data.title;
@@ -63,7 +85,7 @@ app.get('/ui/article-two', function (req, res){
   res.send(createTemp(articleOne));
 });
 
-app.get('/ui/article-three', function (req, res){
+app.get('/ui/article-', function (req, res){
   res.send(createTemp(articleOne));
 });
 
