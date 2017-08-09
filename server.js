@@ -62,7 +62,7 @@ var template = `
         <a href='/'>Home</a>
         </div>
         <div  class="center">
-         <img src="/ui/madi.png" class="img-small"/>
+         <img src="/ui/web234.png" class="img-small"/>
         </div>
         ${date}
         <hr/>
@@ -93,6 +93,10 @@ app.get('/ui/style.css', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+});
+
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'web234.png'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
