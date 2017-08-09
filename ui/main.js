@@ -6,7 +6,7 @@ function moveRight (){
     do {  marginLeft = marginLeft + 10;
     img.style.marginLeft = marginLeft + 'px';
     }
-    while(marginLeft = max-width );
+    while(marginLeft == max-width );
 }
 img.onclick = function (){
     var interval = setInterval(moveRight , 50);
