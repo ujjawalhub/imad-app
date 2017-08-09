@@ -5,11 +5,8 @@ body {
 }
 
 .look{
-    background-color: transparent;
-            background-repeat:no-repeat;
-            border: none;
-            cursor:pointer;
-            overflow: hidden;
+     transform-style: preserve-3d;
+  transform: rotateX( -120deg);
 }
 .center {
     text-align: center;
