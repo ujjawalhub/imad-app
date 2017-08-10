@@ -87,6 +87,11 @@ app.get('/:articleName', function (req, res){
   res.send(createTemp(articles[articleName]));
 });
 
+app.get('/counter', function(req, res){
+  counter = counter + 1 ;
+  res.send(counter.tostring());
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
